@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Chetna Shedame – Backend Developer Portfolio
 
-## Getting Started
+A modern developer portfolio built using **Next.js, TypeScript, and Tailwind CSS** to showcase backend engineering projects and professional experience.
 
-First, run the development server:
+🔗 **Live Site:**  
+https://chetna-portfolio.vercel.app
+
+---
+
+## 👩‍💻 About
+
+This portfolio highlights my transition into backend development and demonstrates:
+
+- Java & Spring Boot backend projects  
+- REST API design  
+- Authentication & security implementation  
+- Clean architecture principles  
+- Production deployment workflow  
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js 16  
+- TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- Lucide React Icons  
+- Vercel Deployment  
+
+---
+
+## ✨ Features
+
+- Responsive modern UI  
+- Sticky navigation bar  
+- Animated hero section  
+- Gradient styling  
+- Interactive project cards  
+- Contact section with icons  
+- Resume download  
+- CI/CD auto deployment via Vercel  
+
+---
+
+## 📂 Project Structure
+app/
+├── layout.tsx
+├── page.tsx
+public/
+├── profile.png
+├── Chetna_Resume.pdf
+
+
+---
+
+## ⚙️ Run Locally
+
+Clone the repository:
 
 ```bash
+git clone https://github.com/chetnashedame/chetna-portfolio.git
+cd chetna-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Deployment
 
-## Learn More
+This project is deployed on **Vercel**.  
+Every push to the `main` branch automatically triggers a new production deployment.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📫 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 📧 **Email:** chetnashedame54l@gmail.com  
+- 💼 **LinkedIn:** https://linkedin.com/in/YOUR-LINKEDIN  
+- 🐙 **GitHub:** https://github.com/chetnashedame  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Purpose
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project demonstrates:
+
+- Frontend + deployment workflow  
+- UI engineering fundamentals  
+- Real-world debugging and package management  
+- Professional presentation for backend job applications  

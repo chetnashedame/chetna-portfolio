@@ -18,22 +18,30 @@ export default function Home() {
             with secure authentication, clean architecture, and performance-focused design.
           </p>
 
-          <div className="mt-10 flex justify-center gap-6">
-            <a
-              href="https://github.com/chetnashedame"
-              target="_blank"
-              className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
-            >
-              GitHub
-            </a>
+          <div className="mt-10 flex justify-center gap-6 flex-wrap">
+  <a
+    href="https://github.com/chetnashedame"
+    target="_blank"
+    className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
+  >
+    GitHub
+  </a>
 
-            <a
-              href="#projects"
-              className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
-            >
-              View Projects
-            </a>
-          </div>
+  <a
+    href="/Chetna_Resume.pdf"
+    target="_blank"
+    className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
+  >
+    Download Resume
+  </a>
+
+  <a
+    href="#projects"
+    className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
+  >
+    View Projects
+  </a>
+</div>
         </div>
       </section>
 
@@ -47,7 +55,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10">
 
             {/* Project 1 */}
-            <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+            <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-gray-900 transition duration-300">
               <h3 className="text-2xl font-semibold">
                 Credit Score Management System
               </h3>
@@ -61,7 +69,7 @@ export default function Home() {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+            <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-gray-900 transition duration-300">
               <h3 className="text-2xl font-semibold">
                 URL Shortener Service
               </h3>

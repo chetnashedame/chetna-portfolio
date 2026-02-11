@@ -75,13 +75,6 @@ Every push to the `main` branch automatically triggers a new production deployme
 
 ---
 
-## 📫 Contact
-
-- 📧 **Email:** chetnashedame54l@gmail.com  
-- 💼 **LinkedIn:** https://linkedin.com/in/YOUR-LINKEDIN  
-- 🐙 **GitHub:** https://github.com/chetnashedame  
-
----
 
 ## 🎯 Purpose
 

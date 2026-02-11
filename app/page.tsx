@@ -1,4 +1,5 @@
 "use client";
+import { TypeAnimation } from 'react-type-animation';
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -6,9 +7,21 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="bg-gradient-to-b from-black via-gray-900 to-black text-white">
+      
+      {/* NAVBAR */}
+<nav className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 border-b border-gray-800">
+  <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 className="font-semibold text-lg">Chetna</h1>
+
+    <div className="hidden md:flex gap-8 text-gray-400">
+      <a href="#projects" className="hover:text-white transition">Projects</a>
+      <a href="#contact" className="hover:text-white transition">Contact</a>
+    </div>
+  </div>
+</nav>
 
       {/* HERO SECTION */}
-<section className="min-h-screen flex items-center px-6">
+<section className="min-h-screen flex items-center px-6 pt-24">
   <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
 
     {/* LEFT SIDE - TEXT */}
@@ -20,12 +33,29 @@ export default function Home() {
       <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
         Hi, I'm <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
   Chetna
+
+  <div className="mt-4 inline-block px-4 py-1 bg-gradient-to-r from-purple-600 to-blue-600 text-sm rounded-full">
+  Backend Engineer
+</div> 
+
 </span>👋
       </h1>
 
-      <p className="mt-6 text-xl text-gray-400">
-        Java Backend Developer | Spring Boot | REST APIs
-      </p>
+      <div className="mt-6 text-xl text-gray-400">
+  <TypeAnimation
+    sequence={[
+      'Java Backend Developer',
+      1500,
+      'Spring Boot Specialist',
+      1500,
+      'REST API Designer',
+      1500,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+  />
+</div>
 
       <p className="mt-6 text-gray-500 leading-relaxed max-w-lg">
         I design and build scalable backend systems with secure authentication,

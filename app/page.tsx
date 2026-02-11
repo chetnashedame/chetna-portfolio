@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 export default function Home() {
   return (
@@ -9,9 +12,15 @@ export default function Home() {
   <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
 
     {/* LEFT SIDE - TEXT */}
-    <div>
+    <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
       <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-        Hi, I'm <span className="text-gray-300">Chetna</span> 👋
+        Hi, I'm <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+  Chetna
+</span>👋
       </h1>
 
       <p className="mt-6 text-xl text-gray-400">
@@ -47,7 +56,7 @@ export default function Home() {
           Contact Me
         </a>
       </div>
-    </div>
+    </motion.div>
 
     {/* RIGHT SIDE - PHOTO */}
     <div className="flex justify-center md:justify-end">
@@ -55,12 +64,12 @@ export default function Home() {
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 blur-2xl opacity-40"></div>
 
         <Image
-          src="/profile.png"
-          alt="Chetna"
-          width={260}
-          height={260}
-          className="relative rounded-full border-4 border-gray-800 object-cover shadow-2xl"
-        />
+  src="/profile.png"
+  alt="Chetna"
+  width={260}
+  height={260}
+  className="relative rounded-full border-4 border-gray-800 object-cover shadow-2xl hover:scale-105 transition duration-300"
+/>
       </div>
     </div>
 
@@ -197,10 +206,10 @@ export default function Home() {
           <div className="flex flex-col gap-4 text-gray-300">
 
             <a
-              href="mailto:chetnashedame54l@gmail.com"
+              href="mailto:chetnashedame54@gmail.com"
               className="hover:text-white transition"
             >
-              📧 chetnashedame54l@gmail.com
+              📧 chetnashedame54@gmail.com
             </a>
 
             <a

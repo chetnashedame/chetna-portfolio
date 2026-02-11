@@ -125,6 +125,32 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+{/* EXPERIENCE SECTION */}
+<section className="py-24 px-6 bg-gray-950">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-16">
+      Experience
+    </h2>
+
+    <div className="bg-gray-800 p-10 rounded-2xl">
+      <h3 className="text-2xl font-semibold">
+        Java Backend Developer
+      </h3>
+      <p className="text-gray-400 mt-2">
+        3+ Years in Enterprise IT Environment
+      </p>
+
+      <ul className="mt-6 space-y-3 text-gray-400 list-disc list-inside">
+        <li>Built and designed backend applications using Java and Spring Boot.</li>
+        <li>Developed RESTful APIs with secure authentication and validation.</li>
+        <li>Worked with relational databases and optimized SQL queries.</li>
+        <li>Debugged and analyzed backend issues in production environments.</li>
+        <li>Collaborated with cross-functional teams to improve system reliability.</li>
+      </ul>
+    </div>
+  </div>
+</section>
     </main>
   );
 }

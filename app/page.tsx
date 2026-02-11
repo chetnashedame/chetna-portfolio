@@ -1,4 +1,5 @@
 "use client";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { TypeAnimation } from 'react-type-animation';
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -22,7 +23,7 @@ export default function Home() {
 
       {/* HERO SECTION */}
 <section className="min-h-screen flex items-center px-6 pt-24">
-  <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+  <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-20 items-center">
 
     {/* LEFT SIDE - TEXT */}
     <motion.div
@@ -30,31 +31,31 @@ export default function Home() {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
 >
-      <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-        Hi, I'm <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-  Chetna
+<h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+  Hi, I'm{" "}
+  <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+    Chetna
+  </span>{" "}
+  👋
+</h1>
 
-  <div className="mt-4 inline-block px-4 py-1 bg-gradient-to-r from-purple-600 to-blue-600 text-sm rounded-full">
+<div className="mt-4 inline-block px-4 py-1 bg-gradient-to-r from-purple-600 to-blue-600 text-sm rounded-full">
   Backend Engineer
-</div> 
-
-</span>👋
-      </h1>
+</div>
 
       <div className="mt-6 text-xl text-gray-400">
   <TypeAnimation
-    sequence={[
-      'Java Backend Developer',
-      1500,
-      'Spring Boot Specialist',
-      1500,
-      'REST API Designer',
-      1500,
-    ]}
-    wrapper="span"
-    speed={50}
-    repeat={Infinity}
-  />
+  sequence={[
+    "Java Backend Developer",
+    2000,
+    "Spring Boot Specialist",
+    2000,
+    "REST API Designer",
+    2000,
+  ]}
+  speed={40}
+  repeat={Infinity}
+/>
 </div>
 
       <p className="mt-6 text-gray-500 leading-relaxed max-w-lg">
@@ -233,32 +234,43 @@ export default function Home() {
             I'm open to backend development opportunities and collaborations.
           </p>
 
-          <div className="flex flex-col gap-4 text-gray-300">
+          <div className="flex flex-col gap-6 items-center text-gray-300">
 
-            <a
-              href="mailto:chetnashedame54@gmail.com"
-              className="hover:text-white transition"
-            >
-              📧 chetnashedame54@gmail.com
-            </a>
+  <a
+    href="tel:+918329606823"
+    className="flex items-center gap-3 hover:text-white transition"
+  >
+    <Phone size={20} />
+    +91 8329606823
+  </a>
 
-            <a
-              href="https://github.com/chetnashedame"
-              target="_blank"
-              className="hover:text-white transition"
-            >
-              💻 GitHub
-            </a>
+  <a
+    href="mailto:chetnashedame54@gmail.com"
+    className="flex items-center gap-3 hover:text-white transition"
+  >
+    <Mail size={20} />
+    chetnashedame54@gmail.com
+  </a>
 
-            <a
-              href="https://linkedin.com/in/chetna-shedame"
-              target="_blank"
-              className="hover:text-white transition"
-            >
-              🔗 LinkedIn
-            </a>
+  <a
+    href="https://github.com/chetnashedame"
+    target="_blank"
+    className="flex items-center gap-3 hover:text-white transition"
+  >
+    <Github size={20} />
+    GitHub
+  </a>
 
-          </div>
+  <a
+    href="https://linkedin.com/in/YOUR-LINKEDIN"
+    target="_blank"
+    className="flex items-center gap-3 hover:text-white transition"
+  >
+    <Linkedin size={20} />
+    LinkedIn
+  </a>
+
+</div>
         </div>
       </section>
 

@@ -1,38 +1,82 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white flex flex-col items-center justify-center px-6">
-      
-      <div className="max-w-3xl text-center">
-        <h1 className="text-6xl font-bold tracking-tight">
-          Hi, I'm <span className="text-gray-300">Chetna</span> 👋
-        </h1>
+    <main className="bg-gradient-to-b from-black via-gray-900 to-black text-white">
 
-        <p className="mt-6 text-xl text-gray-400">
-          Java Backend Developer | Spring Boot | REST APIs
-        </p>
+      {/* HERO SECTION */}
+      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+        <div className="max-w-3xl">
+          <h1 className="text-6xl font-bold tracking-tight">
+            Hi, I'm <span className="text-gray-300">Chetna</span> 👋
+          </h1>
 
-        <p className="mt-6 text-gray-500 leading-relaxed">
-          3+ years in enterprise IT. I design and build scalable backend systems 
-          with clean architecture, secure authentication, and performance-focused design.
-        </p>
+          <p className="mt-6 text-xl text-gray-400">
+            Java Backend Developer | Spring Boot | REST APIs
+          </p>
 
-        <div className="mt-10 flex justify-center gap-6">
-          <a
-            href="https://github.com/chetnashedame"
-            target="_blank"
-            className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
-          >
-            GitHub
-          </a>
+          <p className="mt-6 text-gray-500 leading-relaxed">
+            3+ years in enterprise IT. I design and build scalable backend systems 
+            with secure authentication, clean architecture, and performance-focused design.
+          </p>
 
-          <a
-            href="#projects"
-            className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
-          >
-            View Projects
-          </a>
+          <div className="mt-10 flex justify-center gap-6">
+            <a
+              href="https://github.com/chetnashedame"
+              target="_blank"
+              className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="#projects"
+              className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
+            >
+              View Projects
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section id="projects" className="py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Projects
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+
+            {/* Project 1 */}
+            <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+              <h3 className="text-2xl font-semibold">
+                Credit Score Management System
+              </h3>
+              <p className="mt-4 text-gray-400">
+                Built a secure REST API using Spring Boot with JWT authentication,
+                role-based access control, and MySQL integration.
+              </p>
+              <p className="mt-4 text-sm text-gray-500">
+                Tech: Java, Spring Boot, MySQL, JWT, Docker
+              </p>
+            </div>
+
+            {/* Project 2 */}
+            <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+              <h3 className="text-2xl font-semibold">
+                URL Shortener Service
+              </h3>
+              <p className="mt-4 text-gray-400">
+                Designed and implemented a scalable URL shortening API
+                with database indexing and optimized lookup performance.
+              </p>
+              <p className="mt-4 text-sm text-gray-500">
+                Tech: Java, Spring Boot, JPA, MySQL
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
     </main>
   );

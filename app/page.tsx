@@ -1,5 +1,5 @@
 "use client";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin as LinkedInIcon, Mail, Phone } from "lucide-react";
 import { TypeAnimation } from 'react-type-animation';
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -41,7 +41,12 @@ export default function Home() {
 
 <div className="mt-4 inline-block px-4 py-1 bg-gradient-to-r from-purple-600 to-blue-600 text-sm rounded-full">
   Backend Engineer
+  
 </div>
+
+<p className="mt-4 text-gray-500 max-w-md">
+  3+ years of enterprise IT experience transitioning into backend development.
+</p>
 
       <div className="mt-6 text-xl text-gray-400">
   <TypeAnimation
@@ -266,7 +271,7 @@ export default function Home() {
     target="_blank"
     className="flex items-center gap-3 hover:text-white transition"
   >
-    <Linkedin size={20} />
+    <LinkedInIcon size={20} />
     LinkedIn
   </a>
 

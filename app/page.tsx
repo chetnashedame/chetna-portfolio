@@ -1,49 +1,71 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="bg-gradient-to-b from-black via-gray-900 to-black text-white">
 
       {/* HERO SECTION */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-        <div className="max-w-3xl">
-          <h1 className="text-6xl font-bold tracking-tight">
-            Hi, I'm <span className="text-gray-300">Chetna</span> 👋
-          </h1>
+<section className="min-h-screen flex items-center px-6">
+  <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
 
-          <p className="mt-6 text-xl text-gray-400">
-            Java Backend Developer | Spring Boot | REST APIs
-          </p>
+    {/* LEFT SIDE - TEXT */}
+    <div>
+      <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+        Hi, I'm <span className="text-gray-300">Chetna</span> 👋
+      </h1>
 
-          <p className="mt-6 text-gray-500 leading-relaxed">
-            3+ years in enterprise IT. I design and build scalable backend systems 
-            with secure authentication, clean architecture, and performance-focused design.
-          </p>
+      <p className="mt-6 text-xl text-gray-400">
+        Java Backend Developer | Spring Boot | REST APIs
+      </p>
 
-          <div className="mt-10 flex justify-center gap-6 flex-wrap">
-  <a
-    href="https://github.com/chetnashedame"
-    target="_blank"
-    className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
-  >
-    GitHub
-  </a>
+      <p className="mt-6 text-gray-500 leading-relaxed max-w-lg">
+        I design and build scalable backend systems with secure authentication,
+        clean architecture, and performance-focused design.
+      </p>
 
-  <a
-    href="/Chetna_Resume.pdf"
-    target="_blank"
-    className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
-  >
-    Download Resume
-  </a>
+      <div className="mt-10 flex gap-6 flex-wrap">
+        <a
+          href="https://github.com/chetnashedame"
+          target="_blank"
+          className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
+        >
+          GitHub
+        </a>
 
-  <a
-    href="#projects"
-    className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
-  >
-    View Projects
-  </a>
-</div>
-        </div>
-      </section>
+        <a
+          href="/Chetna_Resume.pdf"
+          target="_blank"
+          className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
+        >
+          Download Resume
+        </a>
+
+        <a
+          href="#contact"
+          className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
+        >
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    {/* RIGHT SIDE - PHOTO */}
+    <div className="flex justify-center md:justify-end">
+      <div className="relative">
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 blur-2xl opacity-40"></div>
+
+        <Image
+          src="/profile.png"
+          alt="Chetna"
+          width={260}
+          height={260}
+          className="relative rounded-full border-4 border-gray-800 object-cover shadow-2xl"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* PROJECTS SECTION */}
       <section id="projects" className="py-24 px-6">
@@ -159,6 +181,48 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+
+      {/* CONTACT SECTION */}
+      <section id="contact" className="py-24 px-6 bg-black">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-10">
+            Contact
+          </h2>
+
+          <p className="text-gray-400 mb-8">
+            I'm open to backend development opportunities and collaborations.
+          </p>
+
+          <div className="flex flex-col gap-4 text-gray-300">
+
+            <a
+              href="mailto:chetnashedame54l@gmail.com"
+              className="hover:text-white transition"
+            >
+              📧 chetnashedame54l@gmail.com
+            </a>
+
+            <a
+              href="https://github.com/chetnashedame"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              💻 GitHub
+            </a>
+
+            <a
+              href="https://linkedin.com/in/chetna-shedame"
+              target="_blank"
+              className="hover:text-white transition"
+            >
+              🔗 LinkedIn
+            </a>
+
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

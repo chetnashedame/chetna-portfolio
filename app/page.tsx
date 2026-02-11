@@ -78,6 +78,53 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SKILLS SECTION */}
+<section className="py-24 px-6 bg-black">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-16">
+      Technical Skills
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-10">
+
+      {/* Backend */}
+      <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+        <h3 className="text-xl font-semibold mb-6">Backend Development</h3>
+        <ul className="space-y-2 text-gray-400">
+          <li>Java 8+</li>
+          <li>Spring Boot</li>
+          <li>RESTful API Design</li>
+          <li>Spring Security & JWT</li>
+          <li>JPA / Hibernate</li>
+        </ul>
+      </div>
+
+      {/* Database */}
+      <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+        <h3 className="text-xl font-semibold mb-6">Database</h3>
+        <ul className="space-y-2 text-gray-400">
+          <li>MySQL</li>
+          <li>SQL Query Optimization</li>
+          <li>Indexing</li>
+          <li>Transaction Management</li>
+        </ul>
+      </div>
+
+      {/* Core Concepts */}
+      <div className="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition">
+        <h3 className="text-xl font-semibold mb-6">Core Concepts & Tools</h3>
+        <ul className="space-y-2 text-gray-400">
+          <li>OOP Principles</li>
+          <li>Collections Framework</li>
+          <li>Multithreading Basics</li>
+          <li>Git & GitHub</li>
+          <li>Docker Basics</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
   );
 }

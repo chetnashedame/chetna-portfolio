@@ -10,7 +10,9 @@ https://chetna-portfolio.vercel.app
 
 ## 🌐 Preview
 
-![Portfolio Preview](assets/portfolio-preview.png)
+<p align="center">
+  <img src="assets/portfolio-preview.png" width="800" />
+</p>
 
 ---
 

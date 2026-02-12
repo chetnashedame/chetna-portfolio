@@ -7,6 +7,13 @@ https://chetna-portfolio.vercel.app
 
 ---
 
+
+## 🌐 Preview
+
+![Portfolio Preview](assets/portfolio-preview.png)
+
+---
+
 ## 👩‍💻 About
 
 This portfolio highlights my transition into backend development and demonstrates:
